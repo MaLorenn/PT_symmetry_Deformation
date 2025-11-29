@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: AF AT, SDF, LIC=UJWP0-BBYJS-01EP1-CUFJE-N80HJ-HZF67
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\AT\Desktop\频率计-PWM输出ADC采集-写入flash-OLED显示2024.11.21\project\examples\ble_peripheral\project\pca10040e\s112\arm5_no_packs\ble_app_uart_pca10040e_s112.uvprojx
+Project File Date:  11/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52810_xxaa'
+compiling main.c...
+..\..\..\main.c(694): warning:  #188-D: enumerated type mixed with another type
+              NRF_DRV_SAADC_DEFAULT_CHANNEL_CONFIG_SE(NRF_SAADC_INPUT_AIN2);   //采集通道P0.02
+..\..\..\main.c(1080): warning:  #177-D: variable "erase_bonds"  was declared but never referenced
+      bool erase_bonds;
+..\..\..\main.c(1084): warning:  #177-D: variable "va_ago"  was declared but never referenced
+  		float va_ago=0;
+..\..\..\main.c(1085): warning:  #177-D: variable "duty"  was declared but never referenced
+  		uint8_t duty=50;
+..\..\..\main.c(1086): warning:  #177-D: variable "duty_ago"  was declared but never referenced
+  		uint8_t duty_ago=0;
+..\..\..\main.c(168): warning:  #177-D: function "timers_init"  was declared but never referenced
+  static void timers_init(void)
+..\..\..\main.c(179): warning:  #177-D: function "gap_params_init"  was declared but never referenced
+  static void gap_params_init(void)
+..\..\..\main.c(259): warning:  #177-D: function "services_init"  was declared but never referenced
+  static void services_init(void)
+..\..\..\main.c(316): warning:  #177-D: function "conn_params_init"  was declared but never referenced
+  static void conn_params_init(void)
+..\..\..\main.c(456): warning:  #177-D: function "ble_stack_init"  was declared but never referenced
+  static void ble_stack_init(void)
+..\..\..\main.c(598): warning:  #177-D: function "advertising_init"  was declared but never referenced
+  static void advertising_init(void)
+..\..\..\main.c(628): warning:  #177-D: function "buttons_leds_init"  was declared but never referenced
+  static void buttons_leds_init(bool * p_erase_bonds)
+..\..\..\main.c(644): warning:  #177-D: function "log_init"  was declared but never referenced
+  static void log_init(void)
+..\..\..\main.c(655): warning:  #177-D: function "power_management_init"  was declared but never referenced
+  static void power_management_init(void)
+..\..\..\main.c(667): warning:  #177-D: function "idle_state_handle"  was declared but never referenced
+  static void idle_state_handle(void)
+..\..\..\main.c(678): warning:  #177-D: function "advertising_start"  was declared but never referenced
+  static void advertising_start(void)
+..\..\..\main.c: 16 warnings, 0 errors
+linking...
+Program Size: Code=28144 RO-data=5352 RW-data=344 ZI-data=5592  
+FromELF: creating hex file...
+".\_build\nrf52810_xxaa.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.40.3.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.40.3
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.40.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_nrf52810_xxaa
+  D:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include
+  D:/Keil_v5/ARM/PACK/NordicSemiconductor/nRF_DeviceFamilyPack/8.40.3/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.40.3
+      Source file:   Device/Source/system_nrf52.c
+      Include file:  Device/Include/system_nrf.h
+      Source file:   Device/Source/arm/arm_startup_nrf52810.s
+      Include file:  Device/Include/system_nrf52810.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

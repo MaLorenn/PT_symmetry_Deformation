@@ -1,0 +1,92 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: AF AT, SDF, LIC=UJWP0-BBYJS-01EP1-CUFJE-N80HJ-HZF67
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\AT\Desktop\ADC采集-PWM输出-寻找电压最大值时的占空比-蓝牙2024.11.27\project\examples\ble_peripheral\project\pca10040e\s112\arm5_no_packs\ble_app_template_pca10040e_s112.uvprojx
+Project File Date:  12/11/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'nrf52810_xxaa'
+compiling main.c...
+..\..\..\main.c(971): warning:  #177-D: variable "erase_bonds"  was declared but never referenced
+      bool erase_bonds;
+..\..\..\main.c(231): warning:  #177-D: function "timers_init"  was declared but never referenced
+  static void timers_init(void)
+..\..\..\main.c(250): warning:  #177-D: function "application_timers_start"  was declared but never referenced
+  static void application_timers_start(void)
+..\..\..\main.c(265): warning:  #177-D: function "gap_params_init"  was declared but never referenced
+  static void gap_params_init(void)
+..\..\..\main.c(296): warning:  #177-D: function "gatt_init"  was declared but never referenced
+  static void gatt_init(void)
+..\..\..\main.c(361): warning:  #177-D: function "services_init"  was declared but never referenced
+  static void services_init(void)
+..\..\..\main.c(415): warning:  #177-D: function "conn_params_init"  was declared but never referenced
+  static void conn_params_init(void)
+..\..\..\main.c(561): warning:  #177-D: function "ble_stack_init"  was declared but never referenced
+  static void ble_stack_init(void)
+..\..\..\main.c(584): warning:  #177-D: function "peer_manager_init"  was declared but never referenced
+  static void peer_manager_init(void)
+..\..\..\main.c(631): warning:  #177-D: function "advertising_init"  was declared but never referenced
+  static void advertising_init(void)
+..\..\..\main.c(671): warning:  #177-D: function "log_init"  was declared but never referenced
+  static void log_init(void)
+..\..\..\main.c(685): warning:  #177-D: function "idle_state_handle"  was declared but never referenced
+  static void idle_state_handle(void)
+..\..\..\main.c: 12 warnings, 0 errors
+linking...
+Program Size: Code=35320 RO-data=6204 RW-data=464 ZI-data=5440  
+FromELF: creating hex file...
+".\_build\nrf52810_xxaa.axf" - 0 Error(s), 12 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.40.3.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.40.3
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.40.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_nrf52810_xxaa
+  D:/Keil_v5/ARM/PACK/ARM/CMSIS/5.6.0/CMSIS/Core/Include
+  D:/Keil_v5/ARM/PACK/NordicSemiconductor/nRF_DeviceFamilyPack/8.40.3/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.40.3
+      Include file:  Device/Include/system_nrf52810.h
+      Source file:   Device/Source/system_nrf52.c
+      Include file:  Device/Include/system_nrf.h
+      Source file:   Device/Source/arm/arm_startup_nrf52810.s
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
